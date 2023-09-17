@@ -1,2 +1,6 @@
 # learn-typescript
-A space to store TypeScript learning materials
+
+| Folder                | Resource                                             |
+| --------------------- | ---------------------------------------------------- |
+| type-level-typescript | <https://type-level-typescript.com/>                 |
+| type-challenges       | <https://github.com/type-challenges/type-challenges> |
