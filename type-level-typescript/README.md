@@ -7,7 +7,7 @@
 |  0  | Introduction               |    ✅     |
 |  1  | Types & values             |    ✅     |
 |  2  | Types are just data        |    ✅     |
-|  3  | Objects & Records          |           |
+|  3  | Objects & Records          |    ✅     |
 |  4  | Arrays & Tuples            |           |
 |  5  | Conditional Types          |           |
 |  6  | Loops with Recursive Types |           |
