@@ -31,7 +31,7 @@ type MyPick<T, K extends keyof T> = {
 // ============= Popular Solution ===========
 // https://github.com/type-challenges/type-challenges/issues/34
 type MyPickSolution<T, K extends keyof T> = {
-  [key in K]: T[key];
+  [Key in K]: T[Key];
 };
 
 // There was no need to do an intersection of keyof T & K

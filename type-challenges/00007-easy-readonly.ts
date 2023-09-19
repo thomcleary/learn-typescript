@@ -14,7 +14,7 @@ interface Todo1 {
 
 // ============= Your Code Here =============
 type MyReadonly<T> = {
-  readonly [key in keyof T]: T[key];
+  readonly [Key in keyof T]: T[Key];
 };
 
 const testMyReadonly: MyReadonly<Todo1> = {
