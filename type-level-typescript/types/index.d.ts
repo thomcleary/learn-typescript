@@ -4,7 +4,9 @@ declare global {
   /**
    * Taken from: https://github.com/gvergnaud/type-level-typescript-workshop/blob/main/helpers.ts
    */
-  export type Equal<X, Y> = (<T>() => T extends X ? 1 : 2) extends <T>() => T extends Y ? 1 : 2 ? true : false;
+  type Equal<X, Y> = (<T>() => T extends Compute<X> ? 1 : 2) extends <T>() => T extends Compute<Y> ? 1 : 2
+    ? true
+    : false;
 
   export type Expect<T extends true> = T;
 
