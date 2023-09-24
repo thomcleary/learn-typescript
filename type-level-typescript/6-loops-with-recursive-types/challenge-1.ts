@@ -12,23 +12,11 @@ namespace assign {
 
   // type AssignAll<Tuple> = TODO
 
-  // This works in the solution checker, but not in VSCode
-  // res1 inferred as { name: "Michel", age: 82 } & { childrenCount: 3 }
-  // while the expected is just { name: "Michel", age: 82, childrenCount: 3 }
   type AssignAll<Tuple> = Tuple extends [infer Head, ...infer Tail]
     ? Tail extends []
       ? Head
       : Head & AssignAll<Tail>
     : {};
-
-  // Solution
-  // This is a "reduce" loop!
-  type AssignAllSolution<Tuple, Output = {}> =
-    // Our accumulator is an empty object.
-    Tuple extends [infer First, ...infer Rest]
-      ? // The logic we perform is an intersection of objects.
-        AssignAllSolution<Rest, Output & First>
-      : Output;
 
   // Two objects
   const res1 = assign({ name: "Michel", age: 82 }, { childrenCount: 3 });
@@ -53,4 +41,13 @@ namespace assign {
   const res4 = assign({ fileName: "hello-world", extension: "txt" });
   type expected4 = { fileName: string; extension: string };
   type test4 = Expect<Equal<typeof res4, expected4>>;
+
+  // Solution
+  // This is a "reduce" loop!
+  type AssignAllSolution<Tuple, Output = {}> =
+    // Our accumulator is an empty object.
+    Tuple extends [infer First, ...infer Rest]
+      ? // The logic we perform is an intersection of objects.
+        AssignAllSolution<Rest, Output & First>
+      : Output;
 }

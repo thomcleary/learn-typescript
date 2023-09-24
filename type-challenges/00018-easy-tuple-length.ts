@@ -18,6 +18,7 @@ type Length<T extends readonly [unknown?, ...unknown[]]> = T["length"];
 
 // Simpler solution
 type SimplerLength<T extends readonly unknown[]> = T["length"];
+
 type solutionCases = [
   Expect<Equal<SimplerLength<typeof tesla>, 4>>,
   Expect<Equal<SimplerLength<typeof spaceX>, 5>>,

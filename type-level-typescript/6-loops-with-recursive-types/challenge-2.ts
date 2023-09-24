@@ -10,19 +10,7 @@ namespace promiseAll {
 
   // type UnwrapAll<Promises> = TODO
 
-  type UnwrapAll<Promises, Values = []> = Promises extends [Promise<infer V>, ...infer Rest]
-    ? [V, ...UnwrapAll<Rest>]
-    : [];
-
-  // Solution (same as mine)
-  // This is a "map" loop!
-  type UnwrapAllSolution<Promises> =
-    // 1. split the list, and infer the promise's `value`:
-    Promises extends [Promise<infer Value>, ...infer Rest]
-      ? // 2. Add the value to the array, recurse on `Rest`:
-        [Value, ...UnwrapAll<Rest>]
-      : // 3. If the list is empty, return an empty list:
-        [];
+  type UnwrapAll<Promises> = Promises extends [Promise<infer V>, ...infer Rest] ? [V, ...UnwrapAll<Rest>] : [];
 
   // Two promises
   const res1 = all([Promise.resolve(20), Promise.resolve("Hello" as const)]);
@@ -44,4 +32,14 @@ namespace promiseAll {
   ]);
   type expected3 = Promise<[number, "Hello", boolean, { key: string }, string[]]>;
   type test3 = Expect<Equal<typeof res3, expected3>>;
+
+  // Solution (same as mine)
+  // This is a "map" loop!
+  type UnwrapAllSolution<Promises> =
+    // 1. split the list, and infer the promise's `value`:
+    Promises extends [Promise<infer Value>, ...infer Rest]
+      ? // 2. Add the value to the array, recurse on `Rest`:
+        [Value, ...UnwrapAll<Rest>]
+      : // 3. If the list is empty, return an empty list:
+        [];
 }

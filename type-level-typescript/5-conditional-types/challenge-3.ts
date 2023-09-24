@@ -11,7 +11,6 @@
 namespace getWithDefault {
   // type GetWithDefault<Key, Obj, Default> = TODO;
 
-  // Weird, this does work on the website's answer checker...
   type GetWithDefault<Key, Obj, Default> = Key extends keyof Obj ? Obj[Key] : Default;
 
   function getWithDefault<K extends string, O extends {}, D>(key: K, obj: O, defaultValue: D): GetWithDefault<K, O, D> {
@@ -22,7 +21,7 @@ namespace getWithDefault {
   type test1 = Expect<Equal<typeof res1, string>>;
 
   const res2 = getWithDefault("oops", { title: "Conditional Types" }, undefined);
-  type test2 = Expect<Equal<typeof res2, undefined>>; // Not sure why this isn't working (works on website answer checker)
+  type test2 = Expect<Equal<typeof res2, undefined>>;
 
   const res3 = getWithDefault("age", { age: 29 }, 0);
   type test3 = Expect<Equal<typeof res3, number>>;

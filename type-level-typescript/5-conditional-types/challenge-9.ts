@@ -9,12 +9,6 @@ namespace flatten {
 
   type Flatten<Arr extends unknown[]> = Arr[number] extends unknown[] ? Arr[number] : Arr;
 
-  // Solution (which uses infer instead)
-  type SolutionFlatten<Arr extends any[]> = Arr extends (infer Item)[][] ? Item[] : Arr;
-
-  // So I guess this would also work
-  type FlattenWithInfer<Arr extends unknown[]> = Arr[number] extends (infer Item)[] ? Item[] : Arr;
-
   function flatten<A extends any[]>(arrayOfArrays: A): Flatten<A> {
     return arrayOfArrays.reduce((acc, item) => [...acc, ...(Array.isArray(item) ? item : [item])], []);
   }
@@ -37,4 +31,10 @@ namespace flatten {
   // Three levels of nesting
   let res4 = flatten([[[[true]], [[false, true]]], [[[true]]]]);
   type test4 = Expect<Equal<typeof res4, boolean[][][]>>;
+
+  // Solution (which uses infer instead)
+  type SolutionFlatten<Arr extends any[]> = Arr extends (infer Item)[][] ? Item[] : Arr;
+
+  // So I guess this would also work
+  type FlattenWithInfer<Arr extends unknown[]> = Arr[number] extends (infer Item)[] ? Item[] : Arr;
 }

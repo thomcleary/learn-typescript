@@ -19,20 +19,6 @@ namespace filterTable {
       : FilterTable<Rest, NameUnion>
     : [];
 
-  // Solution
-  // This is a "filter" loop!
-  type FilterTableSolution<Table, NameUnion> =
-    // 1. split the list:
-    Table extends [infer First, ...infer Rest]
-      ? // 2. check if `First.name` is assignable to `NameUnion`:
-        First extends { name: NameUnion }
-        ? // 3. keep the column if it is:
-          [First, ...FilterTable<Rest, NameUnion>]
-        : // 4. not if it isn't:
-          FilterTable<Rest, NameUnion>
-      : // if the list is empty, return an empty list:
-        [];
-
   declare const userTable: [
     { name: "firstName"; values: string[] },
     { name: "lastName"; values: string[] },
@@ -49,4 +35,18 @@ namespace filterTable {
 
   const res3 = filterTable(userTable, []);
   type test3 = Expect<Equal<typeof res3, []>>;
+
+  // Solution
+  // This is a "filter" loop!
+  type FilterTableSolution<Table, NameUnion> =
+    // 1. split the list:
+    Table extends [infer First, ...infer Rest]
+      ? // 2. check if `First.name` is assignable to `NameUnion`:
+        First extends { name: NameUnion }
+        ? // 3. keep the column if it is:
+          [First, ...FilterTable<Rest, NameUnion>]
+        : // 4. not if it isn't:
+          FilterTable<Rest, NameUnion>
+      : // if the list is empty, return an empty list:
+        [];
 }

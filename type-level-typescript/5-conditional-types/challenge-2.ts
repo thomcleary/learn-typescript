@@ -12,9 +12,6 @@ namespace ifElse {
       : Branch2
     : never;
 
-  // Solution is simpler
-  type SolutionIf<Condition, Branch1, Branch2> = Condition extends true ? Branch1 : Branch2;
-
   type res1 = If<true, string, number>;
   type test1 = Expect<Equal<res1, string>>;
 
@@ -28,4 +25,7 @@ namespace ifElse {
    * We will cover why this works in the advanced union
    * types chapter!
    */
+
+  // Solution
+  type SolutionIf<Condition, Branch1, Branch2> = Condition extends true ? Branch1 : Branch2;
 }
