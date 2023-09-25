@@ -29,7 +29,7 @@ type MyPick<T, K extends keyof T> = {
 };
 
 // ============= Popular Solution ===========
-// https://github.com/type-challenges/type-challenges/issues/34
+// https://github.com/type-challenges/type-challenges/issues/13427
 type MyPickSolution<T, K extends keyof T> = {
   [Key in K]: T[Key];
 };

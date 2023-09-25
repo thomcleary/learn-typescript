@@ -16,7 +16,8 @@ type cases = [
 // ============= Your Code Here =============
 type Length<T extends readonly [unknown?, ...unknown[]]> = T["length"];
 
-// Simpler solution
+// ============= Popular Solution =============
+// https://github.com/type-challenges/type-challenges/issues/725
 type SimplerLength<T extends readonly unknown[]> = T["length"];
 
 type solutionCases = [
