@@ -45,5 +45,5 @@ type ForExample = MyPickSolution<Todo, keyof Todo & "another key">;
 // and
 // "another key"
 //
-// which shows the constrain `K extends keyof T` is enough to enforce
+// which shows the constraint `K extends keyof T` is enough to enforce
 // that the second type parameter to MyPick must only contain keys of T

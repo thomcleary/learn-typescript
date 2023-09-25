@@ -80,7 +80,7 @@ type casesSolution = [
 ];
 
 // Here is my original solution adjusted to work with the solutions method
-// (changing the type constrain of T from MyPromiseLike<unknown> to PromiseLike<any>)
+// (changing the type constraint of T from MyPromiseLike<unknown> to PromiseLike<any>)
 type MyAwaitedFixed<T extends PromiseLike<any>> = T extends MyPromiseLike<infer Value>
   ? Value extends PromiseLike<unknown>
     ? MyAwaited<Value>
