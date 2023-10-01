@@ -11,7 +11,7 @@
 |  4  | Arrays & Tuples            |    ✅     |
 |  5  | Conditional Types          |    ✅     |
 |  6  | Loops with Recursive Types |    ✅     |
-|  7  | Template Literal Types     |           |
+|  7  | Template Literal Types     |    ✅     |
 |  8  | The Union Type Multiverse  |           |
 |  9  | Loops with Mapped Types    |           |
 | 10  | Assignability Quiz         |           |
