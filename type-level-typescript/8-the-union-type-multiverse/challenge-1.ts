@@ -7,6 +7,8 @@
 namespace getColor {
   type LogStatus = "error" | "warning" | "info";
 
+  // type GetColor<Status extends LogStatus> = TODO;
+
   type GetColor<Status extends LogStatus> = Status extends LogStatus
     ? Status extends "error"
       ? "red"

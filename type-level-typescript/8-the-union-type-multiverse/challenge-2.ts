@@ -5,6 +5,8 @@
  * hold inside any of their properties.
  */
 namespace allValues {
+  // type AllValues<T> = TODO;
+
   type AllValues<T> = T extends object ? T[keyof T] : never;
 
   type res1 = AllValues<{ a: "value a" }>;
