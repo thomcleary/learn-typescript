@@ -29,6 +29,6 @@ namespace snakeToCamel {
 
   // Solution
   type SnakeToCamelSolution<Str> = Str extends `${infer Start}_${infer Rest}`
-    ? `${Start}${Capitalize<SnakeToCamel<Rest>>}`
+    ? `${Start}${Capitalize<SnakeToCamelSolution<Rest>>}`
     : Str;
 }
