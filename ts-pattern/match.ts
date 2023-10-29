@@ -1,24 +1,20 @@
 import { match } from "ts-pattern";
+import type { Ape } from "./types.js";
 
-type Ape = "🐒" | "🦧" | "🦍";
-
-const logApe = (ape: Ape) => console.log("Ape:", ape);
-const logNonApe = (nonApe: unknown) => console.log("Not ape:", nonApe);
-
-const matchYesNoUnknown = (ape: Ape) =>
+const matchApe = (ape: Ape) =>
   match(ape)
-    .with("🐒", logApe)
-    .with("🦧", logApe)
-    .with("🦍", logApe)
+    .with("🐒", (value) => console.log(`${value} is a Monkey`))
+    .with("🦧", (value) => console.log(`${value} is an Orangutan`))
+    .with("🦍", (value) => console.log(`${value} is a Gorilla`))
     .when(
       (neverApe) => true,
-      (neverApe) => logNonApe(neverApe),
+      (neverApe) => console.log(`${neverApe} is not an ape`),
     )
     // .otherwise((nonApe) => logNonApe)
     .exhaustive();
 
-matchYesNoUnknown("🐒");
-matchYesNoUnknown("🦧");
-matchYesNoUnknown("🦍");
+matchApe("🐒");
+matchApe("🦧");
+matchApe("🦍");
 // @ts-expect-error
 matchYesNoUnknown("🐼"); // TypeScript will complain if you don't pass it an ape
