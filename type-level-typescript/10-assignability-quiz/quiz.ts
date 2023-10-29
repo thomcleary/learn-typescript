@@ -1,4 +1,4 @@
-// Score x/x
+// 32/42 corect answers
 
 type Quiz1 = "Welcome!" extends string ? true : false;
 type Test1 = Expect<Equal<Quiz1, true>>;
@@ -181,3 +181,58 @@ type Test35 = Expect<Equal<Quiz35, false>>;
 // Building an accurate intuition of the assignability of function types
 // is significantly more challenging than the quiz we've been playing so far.
 // Section on function types follows this quiz question...
+
+type Quiz36 = ((args: (number | string)[]) => number) extends (args: ("a" | "b" | "c")[]) => number ? true : false;
+type Test36 = Expect<Equal<Quiz36, true>>;
+
+type Quiz37 = ((value: unknown) => void) extends (value: never) => void ? true : false;
+// @ts-expect-error
+type Test37 = Expect<Equal<Quiz, false>>;
+// never extends every type
+type NeverExtendsUnknown = never extends unknown ? true : false;
+//   ^?
+
+type Quiz38 = ((id: symbol) => void) extends (value: unknown) => void ? true : false;
+type Test38 = Expect<Equal<Quiz38, false>>;
+
+type Quiz39 = ((value: number) => number) extends (value: number, index: number) => number ? true : false;
+// @ts-expect-error
+type Test39 = Expect<Equal<Quiz39, false>>;
+// functions with fewer arguments are assignable to functions taking more arguments
+const add1 = (n: number) => n + 1;
+const result = [1, 2, 3].map(add1); // [2, 3, 4]
+// map passes not just the value, but also the index and full array to the callback
+
+interface Serializable<T> {
+  serialize: (value: T) => string;
+  deserialize: (str: string) => T | null;
+}
+type Quiz40 = Serializable<true> extends Serializable<boolean> ? true : false;
+type Test40 = Expect<Equal<Quiz40, false>>;
+// Generic types that can be serialized and deserialized are the perfect example of invariance.
+// Since the parameter is both positioned as covariant and contravariant,
+// there is no way it can support subtyping.
+// That's why Serializable<true> isn't assignable to Serializable<boolean>.
+
+type Pair<A, B> = { value: A; update: (value: B) => A };
+type Quiz41 = Pair<1, unknown> extends Pair<number, string> ? true : false;
+type Test41 = Expect<Equal<Quiz41, true>>;
+
+type A = ((arg: { a: string }) => void) | ((arg: { b: number }) => void);
+type B = (arg: { a: string } | { b: number }) => void;
+type Quiz42 = A extends B ? true : false;
+type Test42 = Expect<Equal<Quiz42, false>>;
+// Example
+const main = (callback: (arg: { a: string } | { b: number }) => void) => {
+  callback({ a: "hi" }); // ✅
+  callback({ b: 12 }); // ✅
+};
+// type A is a union of these 2 functions
+declare const takesA: (arg: { a: string }) => void;
+declare const takesB: (arg: { b: number }) => void;
+// @ts-expect-error
+main(takesA);
+// @ts-expect-error
+main(takesB);
+// Neither takesA or takesB supports the full set of inputs that main might pass
+// to the callback
