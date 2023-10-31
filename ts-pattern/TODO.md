@@ -7,7 +7,7 @@
 ## API
 
 - [x] when
-- [ ] with
+- [x] with
 - [ ] when
 - [ ] returnType
 - [ ] exhaustive

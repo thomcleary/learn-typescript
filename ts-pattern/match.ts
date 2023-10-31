@@ -1,6 +1,9 @@
 import { match } from "ts-pattern";
 import type { Ape } from "./types.js";
 
+// match
+// https://github.com/gvergnaud/ts-pattern#match
+
 const matchApe = (ape: Ape) =>
   match(ape)
     .with("🐒", (value) => console.log(`${value} is a Monkey`))
