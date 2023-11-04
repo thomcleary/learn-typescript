@@ -20,4 +20,4 @@ matchApe("🐒");
 matchApe("🦧");
 matchApe("🦍");
 // @ts-expect-error
-matchYesNoUnknown("🐼"); // TypeScript will complain if you don't pass it an ape
+matchApe("🐼"); // TypeScript will complain if you don't pass it an ape
