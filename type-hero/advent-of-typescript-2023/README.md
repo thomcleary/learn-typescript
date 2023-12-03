@@ -1,4 +1,4 @@
-# advent-of-typescript 2023
+# 🎄🟦 advent-of-typescript 2023
 
 <https://typehero.dev/aot-2023>
 
@@ -6,7 +6,7 @@
 | :-: | -------------------------- | :----: |
 |  1  | Christmas Cookies          |   ✅   |
 |  2  | Christmas Cookie Inventory |   ✅   |
-|  3  |                            |        |
+|  3  | The Gift Wrapper           |   ✅   |
 |  4  |                            |        |
 |  5  |                            |        |
 |  6  |                            |        |
