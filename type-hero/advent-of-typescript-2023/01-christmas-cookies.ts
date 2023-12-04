@@ -1,5 +1,3 @@
-import { Equal, Expect } from "type-testing";
-
 // Christmas Cookies
 // It's December 1st!
 // That means it's almost time for the big day!
@@ -15,11 +13,13 @@ import { Equal, Expect } from "type-testing";
 
 // Can you help?
 
-// Answer
-type SantasFavoriteCookies = "ginger-bread" | "chocolate-chip";
-
 // Tests
+import { Equal, Expect } from "type-testing";
+
 type test_0_actual = SantasFavoriteCookies;
 //   ^?
 type test_0_expected = "ginger-bread" | "chocolate-chip";
 type test_0 = Expect<Equal<test_0_actual, test_0_expected>>;
+
+// Answer
+type SantasFavoriteCookies = "ginger-bread" | "chocolate-chip";

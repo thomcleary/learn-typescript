@@ -1,5 +1,3 @@
-import { Equal, Expect } from "type-testing";
-
 // Christmas Cookie Inventory
 // Phew! Yesterday's tactic worked.
 // Santa got down-and-dirty with the elves on the factory floor and they seem to have stopped planning their strike.
@@ -16,10 +14,9 @@ import { Equal, Expect } from "type-testing";
 
 // Good luck! As Santa always says: "your hard work will pay off eventually, just be patient".
 
-// Answer
-type CookieSurveyInput<Inventory> = keyof Inventory;
-
 // Tests
+import { Equal, Expect } from "type-testing";
+
 const cookieInventory = {
   chocolate: 1,
   sugar: 20,
@@ -45,3 +42,6 @@ type test_unrelated_actual = CookieSurveyInput<typeof unrelated>;
 //   ^?
 type test_unrealted_expected = "hi" | "hi2" | "hi3" | "hi4" | "hi5" | "hi6" | "hi7";
 type test_unrelated = Expect<Equal<test_unrelated_actual, test_unrealted_expected>>;
+
+// Answer
+type CookieSurveyInput<Inventory> = keyof Inventory;

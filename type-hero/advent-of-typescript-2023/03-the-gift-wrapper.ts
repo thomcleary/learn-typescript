@@ -1,5 +1,3 @@
-import { Equal, Expect } from "type-testing";
-
 // The Gift Wrapper
 // Did you know that there's also monetary inflation at the North Pole?
 // You betcha, there is.
@@ -17,14 +15,9 @@ import { Equal, Expect } from "type-testing";
 // Please help!
 // Otherwise the reindeer might catch wind of this and start a strike of their own in solidarity with the elves!
 
-// Answer
-type GiftWrapper<P, F, T> = {
-  present: P;
-  from: F;
-  to: T;
-};
-
 // Tests
+import { Equal, Expect } from "type-testing";
+
 type test_SantaToTrash_actual = GiftWrapper<"Car", "Santa", "Trash">;
 //   ^?
 type test_SantaToTrash_expected = { present: "Car"; from: "Santa"; to: "Trash" };
@@ -39,3 +32,10 @@ type test_DanToEvan_actual = GiftWrapper<"javascript", "Dan", "Evan">;
 //   ^?
 type test_DanToEvan_expected = { present: "javascript"; from: "Dan"; to: "Evan" };
 type test_DanToEvan = Expect<Equal<test_DanToEvan_actual, test_DanToEvan_expected>>;
+
+// Answer
+type GiftWrapper<P, F, T> = {
+  present: P;
+  from: F;
+  to: T;
+};
