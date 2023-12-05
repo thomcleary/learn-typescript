@@ -1,4 +1,5 @@
 // The Gift Wrapper
+
 // Did you know that there's also monetary inflation at the North Pole?
 // You betcha, there is.
 // And after 200+ years without a pay raise, Santa's elves are beginning to discuss a general strike.

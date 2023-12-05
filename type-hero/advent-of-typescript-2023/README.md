@@ -8,7 +8,7 @@
 |  2  | Christmas Cookie Inventory           |   ✅   |
 |  3  | The Gift Wrapper                     |   ✅   |
 |  4  | Christmas Present Delivery Addresses |   ✅   |
-|  5  |                                      |        |
+|  5  | Organize Santa's List                |   ✅   |
 |  6  |                                      |        |
 |  7  |                                      |        |
 |  8  |                                      |        |

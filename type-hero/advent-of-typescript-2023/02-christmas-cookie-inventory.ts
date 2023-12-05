@@ -1,4 +1,5 @@
 // Christmas Cookie Inventory
+
 // Phew! Yesterday's tactic worked.
 // Santa got down-and-dirty with the elves on the factory floor and they seem to have stopped planning their strike.
 
