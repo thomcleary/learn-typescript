@@ -9,8 +9,8 @@
 |  3  | The Gift Wrapper                     |   ✅   |
 |  4  | Christmas Present Delivery Addresses |   ✅   |
 |  5  | Organize Santa's List                |   ✅   |
-|  6  | Filtering the Children               |   ✅   |
-|  7  |                                      |        |
+|  6  | Filtering the Children Part 1        |   ✅   |
+|  7  | Filtering the Children Part 2        |   ✅   |
 |  8  |                                      |        |
 |  9  |                                      |        |
 | 10  |                                      |        |
