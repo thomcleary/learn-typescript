@@ -11,7 +11,7 @@
 |  5  | Organize Santa's List                |   ✅   |
 |  6  | Filtering the Children Part 1        |   ✅   |
 |  7  | Filtering the Children Part 2        |   ✅   |
-|  8  |                                      |        |
+|  8  | Filtering the Children Part 3        |   ✅   |
 |  9  |                                      |        |
 | 10  |                                      |        |
 | 11  |                                      |        |
