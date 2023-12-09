@@ -12,7 +12,7 @@
 |  6  | Filtering the Children Part 1        |   ✅   |
 |  7  | Filtering the Children Part 2        |   ✅   |
 |  8  | Filtering the Children Part 3        |   ✅   |
-|  9  |                                      |        |
+|  9  | Is Santa Dyslexic?                   |   ✅   |
 | 10  |                                      |        |
 | 11  |                                      |        |
 | 12  |                                      |        |
