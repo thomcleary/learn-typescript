@@ -14,7 +14,7 @@
 |  8  | Filtering the Children Part 3        |   ✅   |
 |  9  | Is Santa Dyslexic?                   |   ✅   |
 | 10  | Christmas Street Suffix Tester       |   ✅   |
-| 11  |                                      |        |
+| 11  | Protect the List                     |   ✅   |
 | 12  |                                      |        |
 | 13  |                                      |        |
 | 14  |                                      |        |
