@@ -15,7 +15,7 @@
 |  9  | Is Santa Dyslexic?                   |   ✅   |
 | 10  | Christmas Street Suffix Tester       |   ✅   |
 | 11  | Protect the List                     |   ✅   |
-| 12  |                                      |        |
+| 12  | Find Santa                           |   ✅   |
 | 13  |                                      |        |
 | 14  |                                      |        |
 | 15  |                                      |        |
