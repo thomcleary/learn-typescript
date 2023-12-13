@@ -16,7 +16,7 @@
 | 10  | Christmas Street Suffix Tester       |   ✅   |
 | 11  | Protect the List                     |   ✅   |
 | 12  | Find Santa                           |   ✅   |
-| 13  |                                      |        |
+| 13  | Count the Days                       |   ✅   |
 | 14  |                                      |        |
 | 15  |                                      |        |
 | 16  |                                      |        |
