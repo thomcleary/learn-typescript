@@ -17,7 +17,7 @@
 | 11  | Protect the List                     |   ✅   |
 | 12  | Find Santa                           |   ✅   |
 | 13  | Count the Days                       |   ✅   |
-| 14  |                                      |        |
+| 14  | Naughty List Decipher                |   ✅   |
 | 15  |                                      |        |
 | 16  |                                      |        |
 | 17  |                                      |        |
