@@ -18,7 +18,7 @@
 | 12  | Find Santa                           |   ✅   |
 | 13  | Count the Days                       |   ✅   |
 | 14  | Naughty List Decipher                |   ✅   |
-| 15  |                                      |        |
+| 15  | Box the Toys!                        |   ✅   |
 | 16  |                                      |        |
 | 17  |                                      |        |
 | 18  |                                      |        |
