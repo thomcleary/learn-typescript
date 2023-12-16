@@ -48,7 +48,10 @@ type test_4_expected = never;
 type test_4 = Expect<Equal<test_4_expected, test_4_actual>>;
 
 // Answer
-type FindSanta<Forest extends unknown[], Acc extends unknown[] = []> = Forest extends [infer First, ...infer Rest]
+export type FindSanta<Forest extends unknown[], Acc extends unknown[] = []> = Forest extends [
+  infer First,
+  ...infer Rest
+]
   ? First extends "🎅🏼"
     ? Acc["length"]
     : FindSanta<Rest, [...Acc, First]>
