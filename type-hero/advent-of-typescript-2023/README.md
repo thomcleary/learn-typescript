@@ -20,7 +20,7 @@
 | 14  | Naughty List Decipher                |   ✅   |
 | 15  | Box the Toys!                        |   ✅   |
 | 16  | Find Santa (part 2)                  |   ✅   |
-| 17  |                                      |        |
+| 17  | Rock, Paper, Scissors                |   ✅   |
 | 18  |                                      |        |
 | 19  |                                      |        |
 | 20  |                                      |        |
