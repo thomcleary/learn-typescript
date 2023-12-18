@@ -21,7 +21,7 @@
 | 15  | Box the Toys!                        |   ✅   |
 | 16  | Find Santa (part 2)                  |   ✅   |
 | 17  | Rock, Paper, Scissors                |   ✅   |
-| 18  |                                      |        |
+| 18  | Santa's Remaining Deliveries         |   ✅   |
 | 19  |                                      |        |
 | 20  |                                      |        |
 | 21  |                                      |        |
