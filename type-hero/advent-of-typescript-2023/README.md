@@ -22,7 +22,7 @@
 | 16  | Find Santa (part 2)                  |   ✅   |
 | 17  | Rock, Paper, Scissors                |   ✅   |
 | 18  | Santa's Remaining Deliveries         |   ✅   |
-| 19  |                                      |        |
+| 19  | Help Santa Embezzle Funds            |   ✅   |
 | 20  |                                      |        |
 | 21  |                                      |        |
 | 22  |                                      |        |
