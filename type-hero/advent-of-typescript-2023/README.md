@@ -23,7 +23,7 @@
 | 17  | Rock, Paper, Scissors                |   ✅   |
 | 18  | Santa's Remaining Deliveries         |   ✅   |
 | 19  | Help Santa Embezzle Funds            |   ✅   |
-| 20  |                                      |        |
+| 20  | TypeScript ASCII Art!                |   ✅   |
 | 21  |                                      |        |
 | 22  |                                      |        |
 | 23  |                                      |        |
