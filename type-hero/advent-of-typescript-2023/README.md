@@ -24,7 +24,7 @@
 | 18  | Santa's Remaining Deliveries         |   ✅   |
 | 19  | Help Santa Embezzle Funds            |   ✅   |
 | 20  | TypeScript ASCII Art!                |   ✅   |
-| 21  |                                      |        |
+| 21  | What is Tic Tac Toe?                 |   ✅   |
 | 22  |                                      |        |
 | 23  |                                      |        |
 | 24  |                                      |        |
