@@ -25,7 +25,7 @@
 | 19  | Help Santa Embezzle Funds            |   ✅   |
 | 20  | TypeScript ASCII Art!                |   ✅   |
 | 21  | What is Tic Tac Toe?                 |   ✅   |
-| 22  |                                      |        |
+| 22  | Reindeer Sudoku                      |   ✅   |
 | 23  |                                      |        |
 | 24  |                                      |        |
 | 25  |                                      |        |
