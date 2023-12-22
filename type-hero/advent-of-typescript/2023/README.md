@@ -1,4 +1,4 @@
-# 🎄🟦 advent-of-typescript 2023
+# 🎄 🟦 2023
 
 <https://typehero.dev/aot-2023>
 

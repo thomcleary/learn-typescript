@@ -1,0 +1,7 @@
+{
+  "name": "challenges",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1"
+  }
+}
