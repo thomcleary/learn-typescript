@@ -4,5 +4,5 @@
 
 | Folder               | Resource                        |
 | -------------------- | ------------------------------- |
-| challenges           | <https://typehero.dev/explore>  |
 | advent-of-typescript | <https://typehero.dev/aot-2023> |
+| challenges           | <https://typehero.dev/explore>  |
