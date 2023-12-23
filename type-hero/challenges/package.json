@@ -2,6 +2,7 @@
   "name": "challenges",
   "version": "1.0.0",
   "devDependencies": {
-    "@type-challenges/utils": "^0.1.1"
+    "@type-challenges/utils": "^0.1.1",
+    "type-testing": "^0.2.0"
   }
 }
