@@ -26,6 +26,6 @@
 | 20  | TypeScript ASCII Art!                |   ✅   |
 | 21  | What is Tic Tac Toe?                 |   ✅   |
 | 22  | Reindeer Sudoku                      |   ✅   |
-| 23  |                                      |        |
+| 23  | Connect 4, but in TypeScript types   |   ✅   |
 | 24  |                                      |        |
 | 25  |                                      |        |
