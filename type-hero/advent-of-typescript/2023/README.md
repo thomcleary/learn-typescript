@@ -27,5 +27,5 @@
 | 21  | What is Tic Tac Toe?                 |   ✅   |
 | 22  | Reindeer Sudoku                      |   ✅   |
 | 23  | Connect 4, but in TypeScript types   |   ✅   |
-| 24  |                                      |        |
+| 24  | Santa is stuck!                      |   ✅   |
 | 25  |                                      |        |
