@@ -68,4 +68,5 @@ type test_2_actual = FilterChildrenBy<
 type test_2_expected = string | number;
 type test_2 = Expect<Equal<test_2_expected, test_2_actual>>;
 
+// Answer
 type FilterChildrenBy<T, K> = Exclude<T, K>;
