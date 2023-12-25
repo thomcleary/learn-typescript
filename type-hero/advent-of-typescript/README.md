@@ -2,6 +2,6 @@
 
 [Advent of TypeScript](https://typehero.dev/aot-2023)
 
-| Year | Completed |
-| :--: | :-------: |
-| 2023 |   24/25   |
+| Year | Solved |
+| :--: | :----: |
+| 2023 | 25/25  |

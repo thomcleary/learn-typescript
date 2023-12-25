@@ -28,4 +28,4 @@
 | 22  | Reindeer Sudoku                      |   ✅   |
 | 23  | Connect 4, but in TypeScript types   |   ✅   |
 | 24  | Santa is stuck!                      |   ✅   |
-| 25  |                                      |        |
+| 25  | YOU DID IT!                          |   ✅   |
