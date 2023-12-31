@@ -1,5 +1,5 @@
 // Answer
-type Replace<S extends string, From extends string, To extends string> = S extends `${infer Head}${Exclude<
+export type Replace<S extends string, From extends string, To extends string> = S extends `${infer Head}${Exclude<
   From,
   ""
 >}${infer Tail}`
