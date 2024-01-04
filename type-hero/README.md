@@ -2,7 +2,10 @@
 
 <https://typehero.dev/>
 
-| Folder               | Resource                        |
-| -------------------- | ------------------------------- |
-| advent-of-typescript | <https://typehero.dev/aot-2023> |
-| challenges           | <https://typehero.dev/explore>  |
+| Difficulty | Completed |
+| ---------- | :-------: |
+| Beginner   |   14/14   |
+| Easy       |   13/13   |
+| Medium     |   20/95   |
+| Hard       |   0/48    |
+| Extreme    |   0/15    |
