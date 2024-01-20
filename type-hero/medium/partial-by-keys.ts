@@ -1,0 +1,37 @@
+// Answer
+type PartialByKeys<T, K extends keyof T = keyof T> = Prettify<
+  Omit<T, K> & {
+    [Key in K]?: T[Key];
+  }
+>;
+
+type Prettify<T> = { [Key in keyof T]: T[Key] };
+
+// Tests
+import type { Equal, Expect } from "@type-challenges/utils";
+
+interface User {
+  name: string;
+  age: number;
+  address: string;
+}
+
+interface UserPartialName {
+  name?: string;
+  age: number;
+  address: string;
+}
+
+interface UserPartialNameAndAge {
+  name?: string;
+  age?: number;
+  address: string;
+}
+
+type cases = [
+  Expect<Equal<PartialByKeys<User, "name">, UserPartialName>>,
+  Expect<Equal<PartialByKeys<User, "name" | "age">, UserPartialNameAndAge>>,
+  Expect<Equal<PartialByKeys<User>, Partial<User>>>,
+  // @ts-expect-error
+  Expect<Equal<PartialByKeys<User, "name" | "unknown">, UserPartialName>>
+];
