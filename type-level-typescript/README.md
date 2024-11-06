@@ -15,4 +15,4 @@
 |  8  | The Union Type Multiverse  |    ✅     |
 |  9  | Loops with Mapped Types    |    ✅     |
 | 10  | Assignability Quiz         |    ✅     |
-| 11  | Designing Type Safe APIs   |           |
+| 11  | Designing Type Safe APIs   |    ✅     |
